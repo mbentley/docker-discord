@@ -9,4 +9,4 @@ RUN apt-get update &&\
   apt-get purge -y wget &&\
   rm -rf /var/lib/apt/lists/*
 
-  CMD ["/usr/bin/discord"]
+CMD ["/usr/bin/discord","--no-sandbox"]
