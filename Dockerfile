@@ -3,7 +3,7 @@ FROM mbentley/debian:buster
 MAINTAINER Matt Bentley <mbentley@mbentley.net>
 
 RUN apt-get update &&\
-  apt-get install -y libx11-xcb1 procps pulseaudio wget &&\
+  apt-get install -y libgbm1 libx11-xcb1 procps pulseaudio wget &&\
   wget "https://discordapp.com/api/download?platform=linux&format=deb" -O /tmp/discord.deb &&\
   dpkg -i /tmp/discord.deb || apt-get install -fy  &&\
   rm /tmp/discord.deb &&\
