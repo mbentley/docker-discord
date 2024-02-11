@@ -1,5 +1,6 @@
-mbentley/discord
-================
+# mbentley/discord
+
+**Warning**: this image is no longer maintained on Docker Hub but the code is left for an example.
 
 docker image for discord
 based off of alpine:latest
@@ -26,6 +27,7 @@ docker run --rm \
 Running in X11:
 
 Allow connections to the X session:
+
 ```
 xhost +SI:localuser:$(whoami)
 ```
